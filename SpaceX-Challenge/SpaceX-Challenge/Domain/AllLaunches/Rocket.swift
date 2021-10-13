@@ -4,11 +4,13 @@
 
 import Foundation
 
-struct RocketName: Decodable, Equatable {
+struct Rocket: Decodable, Equatable {
     let name: String
+    let type: String
     
     enum CodingKeys: String, CodingKey {
-        case name = "rocket.rocket_name"
+        case name = "rocket_name"
+        case type = "rocket_type"
     }
 }
 

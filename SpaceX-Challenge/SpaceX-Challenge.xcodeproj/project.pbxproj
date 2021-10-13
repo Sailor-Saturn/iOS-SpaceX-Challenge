@@ -32,14 +32,10 @@
 		0BD2E6FD2716395700642662 /* MissionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6FC2716395700642662 /* MissionName.swift */; };
 		0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70027163F7C00642662 /* DateLaunch.swift */; };
 		0BD2E70227163F7C00642662 /* DateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70027163F7C00642662 /* DateLaunch.swift */; };
-		0BD2E70527163FCD00642662 /* RocketName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70427163FCD00642662 /* RocketName.swift */; };
-		0BD2E70627163FCD00642662 /* RocketName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70427163FCD00642662 /* RocketName.swift */; };
-		0BD2E70827163FF600642662 /* RocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70727163FF600642662 /* RocketType.swift */; };
-		0BD2E70927163FF600642662 /* RocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70727163FF600642662 /* RocketType.swift */; };
-		0BD2E70B2716422700642662 /* MissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70A2716422700642662 /* MissionStatus.swift */; };
-		0BD2E70C2716422700642662 /* MissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70A2716422700642662 /* MissionStatus.swift */; };
-		0BD2E70E2716438900642662 /* LaunchLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70D2716438900642662 /* LaunchLinks.swift */; };
-		0BD2E70F2716438900642662 /* LaunchLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70D2716438900642662 /* LaunchLinks.swift */; };
+		0BD2E70527163FCD00642662 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70427163FCD00642662 /* Rocket.swift */; };
+		0BD2E70627163FCD00642662 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70427163FCD00642662 /* Rocket.swift */; };
+		0BD2E70E2716438900642662 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70D2716438900642662 /* Links.swift */; };
+		0BD2E70F2716438900642662 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70D2716438900642662 /* Links.swift */; };
 		0BD2E7112716448600642662 /* AllLaunchesGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E7102716448600642662 /* AllLaunchesGateway.swift */; };
 		0BD2E7122716448600642662 /* AllLaunchesGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E7102716448600642662 /* AllLaunchesGateway.swift */; };
 		0BD2E714271649B400642662 /* AllLaunchesGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E713271649B400642662 /* AllLaunchesGatewayTests.swift */; };
@@ -88,10 +84,8 @@
 		0BD2E6F72716383E00642662 /* AllLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunches.swift; sourceTree = "<group>"; };
 		0BD2E6FC2716395700642662 /* MissionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionName.swift; sourceTree = "<group>"; };
 		0BD2E70027163F7C00642662 /* DateLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLaunch.swift; sourceTree = "<group>"; };
-		0BD2E70427163FCD00642662 /* RocketName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketName.swift; sourceTree = "<group>"; };
-		0BD2E70727163FF600642662 /* RocketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketType.swift; sourceTree = "<group>"; };
-		0BD2E70A2716422700642662 /* MissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionStatus.swift; sourceTree = "<group>"; };
-		0BD2E70D2716438900642662 /* LaunchLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchLinks.swift; sourceTree = "<group>"; };
+		0BD2E70427163FCD00642662 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		0BD2E70D2716438900642662 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		0BD2E7102716448600642662 /* AllLaunchesGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesGateway.swift; sourceTree = "<group>"; };
 		0BD2E713271649B400642662 /* AllLaunchesGatewayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesGatewayTests.swift; sourceTree = "<group>"; };
 		0BD2E71627164A1300642662 /* MockNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
@@ -205,10 +199,8 @@
 				0BD2E6F72716383E00642662 /* AllLaunches.swift */,
 				0BD2E6FC2716395700642662 /* MissionName.swift */,
 				0BD2E70027163F7C00642662 /* DateLaunch.swift */,
-				0BD2E70427163FCD00642662 /* RocketName.swift */,
-				0BD2E70727163FF600642662 /* RocketType.swift */,
-				0BD2E70A2716422700642662 /* MissionStatus.swift */,
-				0BD2E70D2716438900642662 /* LaunchLinks.swift */,
+				0BD2E70427163FCD00642662 /* Rocket.swift */,
+				0BD2E70D2716438900642662 /* Links.swift */,
 			);
 			path = AllLaunches;
 			sourceTree = "<group>";
@@ -353,17 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD2E70B2716422700642662 /* MissionStatus.swift in Sources */,
 				0BD2E6F82716383E00642662 /* AllLaunches.swift in Sources */,
 				0BD2E6FD2716395700642662 /* MissionName.swift in Sources */,
 				0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */,
-				0BD2E70E2716438900642662 /* LaunchLinks.swift in Sources */,
+				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
 				0BD2E6E62714E45000642662 /* NetworkSession.swift in Sources */,
 				0BD2E7112716448600642662 /* AllLaunchesGateway.swift in Sources */,
-				0BD2E70827163FF600642662 /* RocketType.swift in Sources */,
 				0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */,
-				0BD2E70527163FCD00642662 /* RocketName.swift in Sources */,
+				0BD2E70527163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */,
 				0BD2E6EE2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */,
 				0BD2E6E22714E3B000642662 /* URLRequestable.swift in Sources */,
@@ -375,16 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD2E70F2716438900642662 /* LaunchLinks.swift in Sources */,
-				0BD2E70C2716422700642662 /* MissionStatus.swift in Sources */,
+				0BD2E70F2716438900642662 /* Links.swift in Sources */,
 				0BD2E6E72714E45000642662 /* NetworkSession.swift in Sources */,
-				0BD2E70627163FCD00642662 /* RocketName.swift in Sources */,
+				0BD2E70627163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6C8271208B900642662 /* SpaceX_ChallengeTests.swift in Sources */,
 				0BD2E70227163F7C00642662 /* DateLaunch.swift in Sources */,
 				0BD2E71B27164E9500642662 /* AllLaunches.swift in Sources */,
 				0BD2E714271649B400642662 /* AllLaunchesGatewayTests.swift in Sources */,
 				0BD2E6E32714E3B000642662 /* URLRequestable.swift in Sources */,
-				0BD2E70927163FF600642662 /* RocketType.swift in Sources */,
 				0BD2E7122716448600642662 /* AllLaunchesGateway.swift in Sources */,
 				0BD2E71727164A1300642662 /* MockNetworkSession.swift in Sources */,
 				0BD2E6EF2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */,

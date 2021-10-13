@@ -41,8 +41,6 @@ final class AllLaunchesGatewayTests: XCTestCase {
         
         XCTAssertNil(error)
         
-        //XCTAssertEqual(allLaunches?.count, 1)
-        
-        XCTAssertEqual(allLaunches?.missionName.name, "FalconSat")
+        XCTAssertEqual(allLaunches?.mission_name, "FalconSat")
     }
 }

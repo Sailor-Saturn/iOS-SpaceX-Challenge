@@ -28,7 +28,7 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
         let request = GetAllLaunchesRequest()
         
         networkSession.loadData(from: request.urlRequest) { data, _ in
-            guard let jsonData = data else {
+            guard let jsonData =  data else {
                 completion(.failure(.errorGettingData))
                 return
             }

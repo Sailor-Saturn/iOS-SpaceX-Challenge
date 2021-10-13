@@ -5,10 +5,9 @@
 import Foundation
 
 struct AllLaunches: Decodable, Equatable {
-    let missionName: MissionName
-    let launchDateUtc: DateLaunch
-    let rocketName: RocketName
-    let rocketType: RocketType
-    let launchSuccess: MissionStatus
-    let links: LaunchLinks
+    let mission_name: String
+    let launch_date_utc: String
+    let rocket: Rocket
+    let launch_success: Bool
+    let links: Links
 }
