@@ -23,7 +23,7 @@ final class AllLaunchesGatewayTests: XCTestCase {
         
         let fetchExpectation = expectation(description: "fetch expectation")
 
-        var allLaunches: AllLaunches?
+        var allLaunches: [AllLaunches]?
         var error: Error?
 
         gateway.getAllLaunches { result in
@@ -40,7 +40,13 @@ final class AllLaunchesGatewayTests: XCTestCase {
         waitForExpectations(timeout: 1)
         
         XCTAssertNil(error)
-        
-        XCTAssertEqual(allLaunches?.mission_name, "FalconSat")
+        XCTAssertEqual(allLaunches?.count, 2)
+        XCTAssertEqual(allLaunches?[0].launch_date_utc, "2006-03-24T22:30:00.000Z")
+        XCTAssertEqual(allLaunches?[0].rocket.name, "Falcon 1")
+        XCTAssertEqual(allLaunches?[0].rocket.type, "Merlin A")
+        XCTAssertEqual(allLaunches?[0].launch_success, false)
+        XCTAssertEqual(allLaunches?[0].links.article, "https://www.space.com/2196-spacex-inaugural-falcon-1-rocket-lost-launch.html")
+        XCTAssertEqual(allLaunches?[0].links.wikipedia, "https://en.wikipedia.org/wiki/DemoSat")
+        XCTAssertEqual(allLaunches?[0].links.videoPages, "https://www.youtube.com/watch?v=0a_00nJ_Y88")
     }
 }
