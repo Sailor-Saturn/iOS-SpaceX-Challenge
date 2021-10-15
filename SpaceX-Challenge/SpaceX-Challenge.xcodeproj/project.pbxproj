@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2233D22718EB3D006A86E0 /* MainMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */; };
 		0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B0271208B700642662 /* AppDelegate.swift */; };
 		0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B2271208B700642662 /* SceneDelegate.swift */; };
 		0BD2E6B5271208B700642662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B4271208B700642662 /* ViewController.swift */; };
 		0BD2E6B8271208B700642662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B6271208B700642662 /* Main.storyboard */; };
 		0BD2E6BA271208B900642662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B9271208B900642662 /* Assets.xcassets */; };
-		0BD2E6BD271208B900642662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD2E6BB271208B900642662 /* LaunchScreen.storyboard */; };
 		0BD2E6C8271208B900642662 /* SpaceX_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6C7271208B900642662 /* SpaceX_ChallengeTests.swift */; };
 		0BD2E6D2271208B900642662 /* SpaceX_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6D1271208B900642662 /* SpaceX_ChallengeUITests.swift */; };
 		0BD2E6D4271208B900642662 /* SpaceX_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6D3271208B900642662 /* SpaceX_ChallengeUITestsLaunchTests.swift */; };
@@ -63,13 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuManager.swift; sourceTree = "<group>"; };
 		0BD2E6AD271208B700642662 /* SpaceX-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD2E6B0271208B700642662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD2E6B2271208B700642662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0BD2E6B4271208B700642662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BD2E6B7271208B700642662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BD2E6B9271208B900642662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0BD2E6BC271208B900642662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BD2E6BE271208B900642662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD2E6C3271208B900642662 /* SpaceX-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD2E6C7271208B900642662 /* SpaceX_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_ChallengeTests.swift; sourceTree = "<group>"; };
@@ -117,6 +117,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2233CD2718EAE6006A86E0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0B2233CE2718EB07006A86E0 /* MainMenu */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0B2233CE2718EB07006A86E0 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0B2233D02718EB21006A86E0 /* Data */,
+				0B2233CF2718EB17006A86E0 /* Presentation */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		0B2233CF2718EB17006A86E0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0B2233D02718EB21006A86E0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		0BD2E6A4271208B700642662 = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				0BD2E6F62716383200642662 /* Domain */,
-				0BD2E6E02714E33C00642662 /* Data */,
+				0BD2E6E02714E33C00642662 /* Model */,
 				0BD2E6B0271208B700642662 /* AppDelegate.swift */,
 				0BD2E6B2271208B700642662 /* SceneDelegate.swift */,
 				0BD2E6B4271208B700642662 /* ViewController.swift */,
 				0BD2E6B6271208B700642662 /* Main.storyboard */,
 				0BD2E6B9271208B900642662 /* Assets.xcassets */,
-				0BD2E6BB271208B900642662 /* LaunchScreen.storyboard */,
 				0BD2E6BE271208B900642662 /* Info.plist */,
 			);
 			path = "SpaceX-Challenge";
@@ -173,7 +204,7 @@
 			path = "SpaceX-ChallengeUITests";
 			sourceTree = "<group>";
 		};
-		0BD2E6E02714E33C00642662 /* Data */ = {
+		0BD2E6E02714E33C00642662 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0BD2E6E12714E3B000642662 /* URLRequestable.swift */,
@@ -182,12 +213,13 @@
 				0BD2E6ED2714E9BB00642662 /* RawAllLaunchesResponse.swift */,
 				0BD2E7102716448600642662 /* AllLaunchesGateway.swift */,
 			);
-			path = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0BD2E6F62716383200642662 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0B2233CD2718EAE6006A86E0 /* Features */,
 				0BD2E6FB2716394A00642662 /* AllLaunches */,
 			);
 			path = Domain;
@@ -318,7 +350,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD2E6BD271208B900642662 /* LaunchScreen.storyboard in Resources */,
 				0BD2E6BA271208B900642662 /* Assets.xcassets in Resources */,
 				0BD2E6B8271208B700642662 /* Main.storyboard in Resources */,
 			);
@@ -350,6 +381,7 @@
 				0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */,
 				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
+				0B2233D22718EB3D006A86E0 /* MainMenuManager.swift in Sources */,
 				0BD2E6E62714E45000642662 /* NetworkSession.swift in Sources */,
 				0BD2E7112716448600642662 /* AllLaunchesGateway.swift in Sources */,
 				0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */,
@@ -417,14 +449,6 @@
 				0BD2E6B7271208B700642662 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0BD2E6BB271208B900642662 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BD2E6BC271208B900642662 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
