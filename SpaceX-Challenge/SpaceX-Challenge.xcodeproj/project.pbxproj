@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2233D22718EB3D006A86E0 /* MainMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */; };
+		0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */; };
 		0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */; };
 		0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D5271B0827006A86E0 /* LaunchCell.swift */; };
-		0B2233D8271B089C006A86E0 /* LaunchTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D7271B089C006A86E0 /* LaunchTableViewPresenter.swift */; };
+		0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D7271B089C006A86E0 /* LaunchesTableViewPresenter.swift */; };
 		0B2233DA271B08B3006A86E0 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D9271B08B3006A86E0 /* LaunchView.swift */; };
 		0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B0271208B700642662 /* AppDelegate.swift */; };
 		0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B2271208B700642662 /* SceneDelegate.swift */; };
@@ -67,10 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuManager.swift; sourceTree = "<group>"; };
+		0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesManager.swift; sourceTree = "<group>"; };
 		0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		0B2233D5271B0827006A86E0 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
-		0B2233D7271B089C006A86E0 /* LaunchTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewPresenter.swift; sourceTree = "<group>"; };
+		0B2233D7271B089C006A86E0 /* LaunchesTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewPresenter.swift; sourceTree = "<group>"; };
 		0B2233D9271B08B3006A86E0 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0BD2E6AD271208B700642662 /* SpaceX-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD2E6B0271208B700642662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 			children = (
 				0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */,
 				0B2233D5271B0827006A86E0 /* LaunchCell.swift */,
-				0B2233D7271B089C006A86E0 /* LaunchTableViewPresenter.swift */,
+				0B2233D7271B089C006A86E0 /* LaunchesTableViewPresenter.swift */,
 				0B2233D9271B08B3006A86E0 /* LaunchView.swift */,
 			);
 			path = Presentation;
@@ -156,7 +156,7 @@
 		0B2233D02718EB21006A86E0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0B2233D12718EB3D006A86E0 /* MainMenuManager.swift */,
+				0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -393,8 +393,8 @@
 				0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */,
 				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
-				0B2233D8271B089C006A86E0 /* LaunchTableViewPresenter.swift in Sources */,
-				0B2233D22718EB3D006A86E0 /* MainMenuManager.swift in Sources */,
+				0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */,
+				0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */,
 				0B2233DA271B08B3006A86E0 /* LaunchView.swift in Sources */,
 				0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */,
 				0BD2E6E62714E45000642662 /* NetworkSession.swift in Sources */,
