@@ -64,7 +64,7 @@
                             </constraints>
                         </stackView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="133" id="HZR-pL-M1z" customClass="LaunchCell" customModule="SpaceX_Challenge" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpaceXLaunchCell" rowHeight="133" id="HZR-pL-M1z" customClass="LaunchCell" customModule="SpaceX_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="261.5" width="414" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HZR-pL-M1z" id="Xvb-MU-4O2">
@@ -84,13 +84,13 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="291" height="30"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpN-tX-TbV">
-                                                                    <rect key="frame" x="8" y="4" width="68" height="22"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <rect key="frame" x="8" y="4" width="61.5" height="22"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73w-Os-dgT" userLabel="MissionNameLabel">
-                                                                    <rect key="frame" x="130" y="4.5" width="107" height="21"/>
+                                                                    <rect key="frame" x="129.5" y="5.5" width="107" height="19"/>
                                                                     <accessibility key="accessibilityConfiguration" identifier="mission-name-label"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -101,7 +101,7 @@
                                                             <constraints>
                                                                 <constraint firstItem="CpN-tX-TbV" firstAttribute="centerY" secondItem="iY6-rd-yVJ" secondAttribute="centerY" id="2WS-Nc-H66"/>
                                                                 <constraint firstItem="CpN-tX-TbV" firstAttribute="baseline" secondItem="73w-Os-dgT" secondAttribute="firstBaseline" constant="1" id="4xw-6L-IMQ"/>
-                                                                <constraint firstItem="73w-Os-dgT" firstAttribute="leading" secondItem="CpN-tX-TbV" secondAttribute="trailing" constant="54" id="AXB-tB-3Uz"/>
+                                                                <constraint firstItem="73w-Os-dgT" firstAttribute="leading" secondItem="CpN-tX-TbV" secondAttribute="trailing" constant="60" id="AXB-tB-3Uz"/>
                                                                 <constraint firstItem="CpN-tX-TbV" firstAttribute="top" secondItem="iY6-rd-yVJ" secondAttribute="top" constant="4" id="fdB-Ar-TuJ"/>
                                                                 <constraint firstItem="CpN-tX-TbV" firstAttribute="centerY" secondItem="73w-Os-dgT" secondAttribute="centerY" id="oRn-1B-zVu"/>
                                                                 <constraint firstAttribute="height" constant="30" id="qev-OL-bOa"/>
@@ -111,14 +111,16 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWH-qO-SZ7" userLabel="DateView">
                                                             <rect key="frame" x="0.0" y="31" width="291" height="30"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date/time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-ba-Qce">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date/time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-ba-Qce">
                                                                     <rect key="frame" x="8" y="4" width="85.5" height="22"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date/Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-8S-3Ul" userLabel="DateTimeLabel">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date/Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-8S-3Ul" userLabel="DateTimeLabel">
                                                                     <rect key="frame" x="129.5" y="5.5" width="78.5" height="19"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <accessibility key="accessibilityConfiguration" identifier="date-time-label"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -127,26 +129,22 @@
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstItem="RoJ-ba-Qce" firstAttribute="baseline" secondItem="Jld-8S-3Ul" secondAttribute="firstBaseline" id="PDf-vg-A6J"/>
                                                                 <constraint firstAttribute="height" constant="30" id="Wj3-Oj-EA2"/>
-                                                                <constraint firstItem="RoJ-ba-Qce" firstAttribute="top" secondItem="NWH-qO-SZ7" secondAttribute="top" constant="4" id="cQJ-iW-FcB"/>
-                                                                <constraint firstItem="RoJ-ba-Qce" firstAttribute="centerY" secondItem="NWH-qO-SZ7" secondAttribute="centerY" id="k6Q-7X-HPK"/>
-                                                                <constraint firstItem="RoJ-ba-Qce" firstAttribute="centerY" secondItem="Jld-8S-3Ul" secondAttribute="centerY" id="pKY-0O-eAo"/>
-                                                                <constraint firstItem="RoJ-ba-Qce" firstAttribute="leading" secondItem="NWH-qO-SZ7" secondAttribute="leadingMargin" id="qZk-1C-b14"/>
-                                                                <constraint firstItem="Jld-8S-3Ul" firstAttribute="leading" secondItem="RoJ-ba-Qce" secondAttribute="trailing" constant="36" id="sNY-cl-8od"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-eY-sle" userLabel="RocketView">
                                                             <rect key="frame" x="0.0" y="62" width="291" height="30"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rocket:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3X-R9-SXg">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rocket:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3X-R9-SXg">
                                                                     <rect key="frame" x="8" y="4" width="62" height="22"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rocket Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLK-zJ-1Bg" userLabel="RocketNameLabel">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rocket Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLK-zJ-1Bg" userLabel="RocketNameLabel">
                                                                     <rect key="frame" x="131" y="4" width="102" height="20.5"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <accessibility key="accessibilityConfiguration" identifier="rocket-name-label"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -156,20 +154,15 @@
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="0T0-ST-Of8"/>
-                                                                <constraint firstItem="z3X-R9-SXg" firstAttribute="centerY" secondItem="tLK-zJ-1Bg" secondAttribute="centerY" id="27w-iJ-quW"/>
-                                                                <constraint firstItem="z3X-R9-SXg" firstAttribute="centerY" secondItem="huJ-eY-sle" secondAttribute="centerY" id="Pkn-b5-Nl9"/>
-                                                                <constraint firstItem="tLK-zJ-1Bg" firstAttribute="leading" secondItem="z3X-R9-SXg" secondAttribute="trailing" constant="60" id="dZ7-F9-Pnm"/>
-                                                                <constraint firstItem="z3X-R9-SXg" firstAttribute="top" secondItem="huJ-eY-sle" secondAttribute="top" constant="4" id="lhO-8X-dH6"/>
-                                                                <constraint firstAttribute="trailing" secondItem="tLK-zJ-1Bg" secondAttribute="trailing" constant="45" id="oG6-OY-wEs"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTh-Mb-BM0" userLabel="DaysView">
                                                             <rect key="frame" x="0.0" y="93" width="291" height="29"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days from now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEa-to-p69">
-                                                                    <rect key="frame" x="8" y="3" width="127" height="21"/>
+                                                                    <rect key="frame" x="8" y="3" width="114" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -215,7 +208,9 @@
                                         <constraint firstAttribute="bottom" secondItem="MOq-LJ-HC3" secondAttribute="bottom" id="pGa-jr-lT1"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="launch-cell"/>
+                                <connections>
+                                    <outlet property="missionNameLabel" destination="73w-Os-dgT" id="vZm-QW-J9z"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

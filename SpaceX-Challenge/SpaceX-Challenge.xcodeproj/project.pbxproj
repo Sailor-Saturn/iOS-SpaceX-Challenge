@@ -29,8 +29,6 @@
 		0BD2E6EA2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */; };
 		0BD2E6EB2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */; };
 		0BD2E6EC2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */; };
-		0BD2E6EE2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6ED2714E9BB00642662 /* RawAllLaunchesResponse.swift */; };
-		0BD2E6EF2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6ED2714E9BB00642662 /* RawAllLaunchesResponse.swift */; };
 		0BD2E6F52714F4FD00642662 /* GetAllLauchesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F12714EFCD00642662 /* GetAllLauchesRequestTest.swift */; };
 		0BD2E6F82716383E00642662 /* AllLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F72716383E00642662 /* AllLaunches.swift */; };
 		0BD2E6FD2716395700642662 /* MissionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6FC2716395700642662 /* MissionName.swift */; };
@@ -87,7 +85,6 @@
 		0BD2E6E12714E3B000642662 /* URLRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestable.swift; sourceTree = "<group>"; };
 		0BD2E6E52714E45000642662 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLaunchesRequest.swift; sourceTree = "<group>"; };
-		0BD2E6ED2714E9BB00642662 /* RawAllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawAllLaunchesResponse.swift; sourceTree = "<group>"; };
 		0BD2E6F12714EFCD00642662 /* GetAllLauchesRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLauchesRequestTest.swift; sourceTree = "<group>"; };
 		0BD2E6F72716383E00642662 /* AllLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunches.swift; sourceTree = "<group>"; };
 		0BD2E6FC2716395700642662 /* MissionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionName.swift; sourceTree = "<group>"; };
@@ -222,7 +219,6 @@
 				0BD2E6E12714E3B000642662 /* URLRequestable.swift */,
 				0BD2E6E52714E45000642662 /* NetworkSession.swift */,
 				0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */,
-				0BD2E6ED2714E9BB00642662 /* RawAllLaunchesResponse.swift */,
 				0BD2E7102716448600642662 /* AllLaunchesGateway.swift */,
 			);
 			path = Model;
@@ -403,7 +399,6 @@
 				0BD2E70527163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */,
 				0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */,
-				0BD2E6EE2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */,
 				0BD2E6E22714E3B000642662 /* URLRequestable.swift in Sources */,
 				0BD2E6EA2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */,
 			);
@@ -423,7 +418,6 @@
 				0BD2E6E32714E3B000642662 /* URLRequestable.swift in Sources */,
 				0BD2E7122716448600642662 /* AllLaunchesGateway.swift in Sources */,
 				0BD2E71727164A1300642662 /* MockNetworkSession.swift in Sources */,
-				0BD2E6EF2714E9BB00642662 /* RawAllLaunchesResponse.swift in Sources */,
 				0BD2E71927164B4000642662 /* AllLaunchesGatewayHelper.swift in Sources */,
 				0BD2E6F52714F4FD00642662 /* GetAllLauchesRequestTest.swift in Sources */,
 				0BD2E6EB2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */,

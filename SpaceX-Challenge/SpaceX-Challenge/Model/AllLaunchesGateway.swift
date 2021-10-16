@@ -37,7 +37,8 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
                 let response = try self.decoder.decode([AllLaunches].self, from: jsonData)
                 completion(.success(response))
             } catch {
-                
+                debugPrint(error)
+                print(error.localizedDescription)
                 completion(.failure(.errorParsingData))
             }
         }

@@ -1,6 +1,3 @@
-//
-//  MockNetworkSession.swift
-//  SpaceX-ChallengeTests
 
 import Foundation
 @testable import SpaceX_Challenge

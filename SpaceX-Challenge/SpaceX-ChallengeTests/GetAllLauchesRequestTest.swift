@@ -1,6 +1,3 @@
-//
-//  GetAllLauchesRequestTest.swift
-//  SpaceX-Challenge
 
 import Foundation
 import XCTest

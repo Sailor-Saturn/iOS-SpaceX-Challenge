@@ -1,9 +1,3 @@
-//
-//  AllLaunchesGatewayHelper.swift
-//  SpaceX-ChallengeTests
-//
-//  Created by Vera Dias on 13/10/2021.
-//
 
 import Foundation
 

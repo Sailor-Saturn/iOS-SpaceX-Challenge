@@ -1,9 +1,3 @@
-//
-//  SpaceX_ChallengeTests.swift
-//  SpaceX-ChallengeTests
-//
-//  Created by Vera Dias on 09/10/2021.
-//
 
 import XCTest
 @testable import SpaceX_Challenge

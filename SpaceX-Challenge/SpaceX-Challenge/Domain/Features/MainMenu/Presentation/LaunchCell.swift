@@ -1,13 +1,14 @@
-//
-//  LaunchCell.swift
-//  SpaceX-Challenge
-//
-//  Created by Vera Dias on 16/10/2021.
-//
 
 import Foundation
 import UIKit
 
 class LaunchCell: UITableViewCell, LaunchView {
-    
+    @IBOutlet weak var missionNameLabel: UILabel!
+ 
+    func displayMissionName(with text: String){
+        missionNameLabel.text = text
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+    }
 }

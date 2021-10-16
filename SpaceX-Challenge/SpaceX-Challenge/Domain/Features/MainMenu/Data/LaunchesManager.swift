@@ -2,6 +2,7 @@
 
 import Foundation
 
-public class LaunchesManager {
+public class LaunchesManager{
+    
     
 }

@@ -1,8 +1,21 @@
 
 import UIKit
 
-class LaunchesTableViewController: UITableViewController {
-    let presenter = LaunchesTableViewPresenter()
+class LaunchesTableViewController: UITableViewController, LaunchesView {
+    
+    var presenter = LaunchesTableViewPresenter()
+    
+    func reloadData() {
+        tableView.reloadData()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        presenter.requestAllLaunches()
+        presenter.view = self
+        
+    }
     
     //MARK: Section Configuration
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -21,12 +34,11 @@ class LaunchesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let sandwichCell = tableView.dequeueReusableCell(withIdentifier: "LaunchCell") as? LaunchCell {
-            presenter.configureMenuSandwichView(sandwichCell, forIndex: indexPath.row)
-            return sandwichCell
+        if let launchCell = tableView.dequeueReusableCell(withIdentifier: "SpaceXLaunchCell") as? LaunchCell {
+            presenter.configureLaunchCellView(launchCell, forIndex: indexPath.row)
+            return launchCell
         }
         
         return UITableViewCell()
     }
-    
 }
