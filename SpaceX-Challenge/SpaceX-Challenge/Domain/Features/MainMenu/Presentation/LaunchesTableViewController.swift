@@ -11,10 +11,8 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         presenter.requestAllLaunches()
         presenter.view = self
-        
     }
     
     //MARK: Section Configuration

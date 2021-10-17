@@ -6,9 +6,9 @@ public protocol LaunchesView {
     
 }
 public class LaunchesTableViewPresenter {
-    //let launchesManager = LaunchesManager()
     
     let gateway = AllLaunchesGateway()
+    let launchManager = LaunchesManager()
     
     public var view: LaunchesView?
     
@@ -29,14 +29,21 @@ public class LaunchesTableViewPresenter {
     }
     
     func numberOfRowsInSection() -> Int {
-        print(allLaunches.count)
-        return allLaunches.count // TODO: Change when connecting to manager
+        return allLaunches.count
     }
     
     //MARK: Cell Configuration
     func configureLaunchCellView(_ view: LaunchView, forIndex index: Int){
         let launch = allLaunches[index]
         view.displayMissionName(with: launch.mission_name)
+        
+        view.displayDateTimeLabel(with: launchManager.populateDate(with: launch.launch_date_utc))
+        
+        view.displayRocketNameLabel(with: launchManager.populateRocketName(with: launch.rocket))
+        
+        view.displayDaysFromLabel(with: launchManager.populateDateFromToday(with: launch.launch_date_utc))
+        
+        view.displayWasMissionSuccessful(with: launch.launch_success ?? false)
     }
     
     func requestAllLaunches() {

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "180-1801413_sticker-other-elon-musk-joint-beuh-elon-musk@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "180-1801413_sticker-other-elon-musk-joint-beuh-elon-musk@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "180-1801413_sticker-other-elon-musk-joint-beuh-elon-musk@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
