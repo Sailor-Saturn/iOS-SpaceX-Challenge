@@ -41,7 +41,7 @@
                                             <buttonConfiguration key="configuration" style="plain" image="hammer.fill" catalog="system"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-mV-X2J">
-                                            <rect key="frame" x="0.0" y="63" width="414" height="154"/>
+                                            <rect key="frame" x="0.0" y="63" width="414" height="133"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -146,6 +146,7 @@
                                     <outlet property="dateTimeLabel" destination="Jld-8S-3Ul" id="0LU-JA-AdH"/>
                                     <outlet property="daysFromLabel" destination="n09-iS-XTL" id="2CQ-DK-e1U"/>
                                     <outlet property="missionNameLabel" destination="73w-Os-dgT" id="vZm-QW-J9z"/>
+                                    <outlet property="patchImage" destination="PID-R4-twO" id="sYp-vx-m0p"/>
                                     <outlet property="rocketNameLabel" destination="tLK-zJ-1Bg" id="Mrt-xx-EYa"/>
                                     <outlet property="wasSuccessfulButton" destination="vLy-hb-X4N" id="sst-Zq-abO"/>
                                 </connections>

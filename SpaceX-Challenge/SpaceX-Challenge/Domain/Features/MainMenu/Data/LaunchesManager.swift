@@ -5,7 +5,7 @@ import Foundation
 public class LaunchesManager {
 
     // TODO: Add all Gateway request must be passed through the manager
-    // TODO: All converstion tests
+    // TODO: Date format tests
     
     func convertDateFromUTCFormat(date: String?) -> Date? {
         guard let dateValue = date else {
@@ -83,7 +83,7 @@ public class LaunchesManager {
         if(dateLaunchUTC < todaysDate) {
             return "Days since: " + calendar.numberOfDaysBetween(dateLaunchUTC, and: todaysDate) + " days"
         }else if (dateLaunchUTC == todaysDate) {
-            return "The launch is today!" // Small easter egg
+            return "The launch is today! 🥳" // Small easter egg
         }
         return "Days from now: " + calendar.numberOfDaysBetween(todaysDate, and: dateLaunchUTC) + " days"
     }

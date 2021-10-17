@@ -6,4 +6,5 @@ public protocol LaunchView {
     func displayRocketNameLabel(with text: String)
     func displayDaysFromLabel(with text: String)
     func displayWasMissionSuccessful(with successFlag: Bool)
+    func displayPatchImage(with url: String?)
 }

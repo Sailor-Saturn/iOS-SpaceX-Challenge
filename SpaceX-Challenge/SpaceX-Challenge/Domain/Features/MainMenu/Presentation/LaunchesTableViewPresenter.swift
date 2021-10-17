@@ -44,6 +44,8 @@ public class LaunchesTableViewPresenter {
         view.displayDaysFromLabel(with: launchManager.populateDateFromToday(with: launch.launch_date_utc))
         
         view.displayWasMissionSuccessful(with: launch.launch_success ?? false)
+        
+        view.displayPatchImage(with: launch.links?.imagePatch)
     }
     
     func requestAllLaunches() {
