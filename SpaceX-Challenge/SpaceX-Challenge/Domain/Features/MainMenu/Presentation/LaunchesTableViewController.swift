@@ -55,7 +55,7 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
               let linkSelected = sender as? Links else {
             return
         }
-
+        
         linkScreenViewController.presenter = LinkViewPresenter(links: linkSelected)
         linkScreenViewController.presenter?.view = linkScreenViewController
     }

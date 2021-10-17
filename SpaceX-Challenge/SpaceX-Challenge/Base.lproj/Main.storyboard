@@ -151,7 +151,6 @@
                                     <outlet property="patchImage" destination="PID-R4-twO" id="sYp-vx-m0p"/>
                                     <outlet property="rocketNameLabel" destination="tLK-zJ-1Bg" id="Mrt-xx-EYa"/>
                                     <outlet property="wasSuccessfulButton" destination="vLy-hb-X4N" id="sst-Zq-abO"/>
-                                    <segue destination="Ffd-wv-bv8" kind="presentation" identifier="cellToLinks" id="I7d-xZ-85Q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,10 +159,13 @@
                             <outlet property="delegate" destination="QsN-5Y-0rG" id="Egc-mp-ErU"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="Ffd-wv-bv8" kind="presentation" identifier="cellToLinks" id="dp9-MQ-wYO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir1-xv-svX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-393" y="-2"/>
+            <point key="canvasLocation" x="-528" y="-9"/>
         </scene>
         <!--Link Screen View Controller-->
         <scene sceneID="NWh-vW-rpr">
