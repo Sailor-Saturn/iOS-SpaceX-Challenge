@@ -11,7 +11,7 @@ enum AllLaunchesGatewayError: Error {
 }
 
 protocol AllLaunchesGatewayProtocol: AnyObject {
-    func getAllLaunches(completion: @escaping(Result<[AllLaunches], AllLaunchesGatewayError>) -> Void)
+    func getAllLaunches(completion: @escaping(Result<[Launch], AllLaunchesGatewayError>) -> Void)
 }
 
 final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
@@ -23,7 +23,7 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
     
     let decoder = JSONDecoder()
     
-    func getAllLaunches(completion: @escaping (Result<[AllLaunches], AllLaunchesGatewayError>) -> Void) {
+    func getAllLaunches(completion: @escaping (Result<[Launch], AllLaunchesGatewayError>) -> Void) {
         
         let request = GetAllLaunchesRequest()
         
@@ -34,7 +34,7 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
             }
             
             do {
-                let response = try self.decoder.decode([AllLaunches].self, from: jsonData)
+                let response = try self.decoder.decode([Launch].self, from: jsonData)
                 completion(.success(response))
             } catch {
                 debugPrint(error)

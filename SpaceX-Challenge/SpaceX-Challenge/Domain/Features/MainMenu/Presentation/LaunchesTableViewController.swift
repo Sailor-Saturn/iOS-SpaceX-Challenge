@@ -2,7 +2,7 @@
 import UIKit
 
 class LaunchesTableViewController: UITableViewController, LaunchesView {
-    
+
     var presenter = LaunchesTableViewPresenter()
     
     func reloadData() {
@@ -39,4 +39,25 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
         
         return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelect(row: indexPath.row)
+    }
+    
+    func navigateToLinkScreen(with links: Links) {
+        self.performSegue(withIdentifier: Segues.cellToLinks, sender: links)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard let linkScreenViewController = segue.destination as? LinkScreenViewController,
+              let linkSelected = sender as? Links else {
+            return
+        }
+
+        linkScreenViewController.presenter = LinkViewPresenter(links: linkSelected)
+        linkScreenViewController.presenter?.view = linkScreenViewController
+    }
+    
 }

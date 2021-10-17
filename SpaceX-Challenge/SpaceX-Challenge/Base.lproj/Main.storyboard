@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,16 +23,6 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnu-dq-xYu" userLabel="TopView">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUQ-2U-8cG">
-                                            <rect key="frame" x="162" y="10" width="90" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="INi-Zq-CyK"/>
-                                                <constraint firstAttribute="height" constant="35" id="qoT-3T-oTM"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHm-31-MC7">
                                             <rect key="frame" x="355" y="10" width="49" height="35"/>
                                             <constraints>
@@ -47,11 +38,22 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUQ-2U-8cG">
+                                            <rect key="frame" x="162" y="10" width="90" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="INi-Zq-CyK"/>
+                                                <constraint firstAttribute="height" constant="35" id="qoT-3T-oTM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="pUQ-2U-8cG" firstAttribute="top" secondItem="MHm-31-MC7" secondAttribute="top" id="6Zb-hB-3EO"/>
                                         <constraint firstAttribute="trailing" secondItem="MHm-31-MC7" secondAttribute="trailing" constant="10" id="9Ee-LJ-sCp"/>
+                                        <constraint firstItem="pUQ-2U-8cG" firstAttribute="centerX" secondItem="fnu-dq-xYu" secondAttribute="centerX" id="J4t-tc-Zce"/>
                                         <constraint firstItem="MHm-31-MC7" firstAttribute="leading" secondItem="pUQ-2U-8cG" secondAttribute="trailing" constant="103" id="NFF-ji-bpV"/>
                                         <constraint firstItem="MHm-31-MC7" firstAttribute="top" secondItem="fnu-dq-xYu" secondAttribute="top" constant="10" id="yRF-sf-wG7"/>
                                     </constraints>
@@ -149,6 +151,7 @@
                                     <outlet property="patchImage" destination="PID-R4-twO" id="sYp-vx-m0p"/>
                                     <outlet property="rocketNameLabel" destination="tLK-zJ-1Bg" id="Mrt-xx-EYa"/>
                                     <outlet property="wasSuccessfulButton" destination="vLy-hb-X4N" id="sst-Zq-abO"/>
+                                    <segue destination="Ffd-wv-bv8" kind="presentation" identifier="cellToLinks" id="I7d-xZ-85Q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,7 +163,72 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir1-xv-svX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178.2608695652174" y="-22.098214285714285"/>
+            <point key="canvasLocation" x="-393" y="-2"/>
+        </scene>
+        <!--Link Screen View Controller-->
+        <scene sceneID="NWh-vW-rpr">
+            <objects>
+                <viewController id="Ffd-wv-bv8" customClass="LinkScreenViewController" customModule="SpaceX_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUY-fh-J6j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o75-TS-Bfp">
+                                <rect key="frame" x="0.0" y="20" width="77.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go back"/>
+                                <connections>
+                                    <action selector="goBackButtonTapped:" destination="Ffd-wv-bv8" eventType="touchUpInside" id="Ay3-4m-JdL"/>
+                                    <action selector="goBackButtonTapped:" destination="afW-YE-obs" eventType="touchUpInside" id="CWI-CH-Viz"/>
+                                    <action selector="goBackl:forEvent:" destination="afW-YE-obs" eventType="touchUpInside" id="mXP-dM-fBb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-nj-uxc">
+                                <rect key="frame" x="12" y="78" width="41.5" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-gP-JSw" userLabel="articleLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-kk-jc2" userLabel="wikipideaLabel">
+                                        <rect key="frame" x="0.0" y="65" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGk-cH-xU2" userLabel="videoLabel">
+                                        <rect key="frame" x="0.0" y="129.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rWe-o4-3hi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PYn-Zi-RYD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LsL-nj-uxc" firstAttribute="top" secondItem="o75-TS-Bfp" secondAttribute="bottom" constant="27" id="3mW-Di-bTw"/>
+                            <constraint firstItem="o75-TS-Bfp" firstAttribute="top" secondItem="PYn-Zi-RYD" secondAttribute="top" constant="20" id="YCe-70-bwN"/>
+                            <constraint firstItem="LsL-nj-uxc" firstAttribute="leading" secondItem="PYn-Zi-RYD" secondAttribute="leading" constant="12" id="cXd-Id-Xcg"/>
+                            <constraint firstItem="o75-TS-Bfp" firstAttribute="leading" secondItem="PYn-Zi-RYD" secondAttribute="leading" id="ead-g9-FTX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="articleLabel" destination="GiZ-gP-JSw" id="6CB-0M-xus"/>
+                        <outlet property="videoLabel" destination="fGk-cH-xU2" id="icd-2i-UX4"/>
+                        <outlet property="wikipideaLabel" destination="HdY-kk-jc2" id="Cgl-6V-GPU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy8-eE-yOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="afW-YE-obs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="418.84057971014494" y="-2.0089285714285712"/>
         </scene>
     </scenes>
     <resources>

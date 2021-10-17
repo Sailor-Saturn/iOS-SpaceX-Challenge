@@ -3,7 +3,7 @@ import Foundation
 
 public protocol LaunchesView {
     func reloadData()
-    
+    func navigateToLinkScreen(with links: Links)
 }
 public class LaunchesTableViewPresenter {
     
@@ -12,7 +12,7 @@ public class LaunchesTableViewPresenter {
     
     public var view: LaunchesView?
     
-    var allLaunches = [AllLaunches]() {
+    var allLaunches = [Launch]() {
         didSet {
             DispatchQueue.main.async {
                 self.view?.reloadData()
@@ -57,5 +57,13 @@ public class LaunchesTableViewPresenter {
                 self?.allLaunches = launches
             }
         }
+    }
+    
+    func didSelect(row: Int) {
+        let selectedLaunch = allLaunches[row]
+        guard let links = selectedLaunch.links else {
+            return
+        }
+        view?.navigateToLinkScreen(with: links)
     }
 }

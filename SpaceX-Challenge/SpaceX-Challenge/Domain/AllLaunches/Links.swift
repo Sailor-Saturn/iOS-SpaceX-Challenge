@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Links: Decodable, Equatable {
+public struct Links: Decodable, Equatable {
     let article: String?
     let wikipedia: String?
     let videoPages: String?

@@ -50,8 +50,9 @@ class LaunchCell: UITableViewCell, LaunchView {
         wasSuccessfulButton.tintColor = color
     }
     
-    // I didnt know how to show image from URL so I needed to research online and find this
+    // I didnt know how to show image from URL so I needed to research online and found this
     // https://www.hackingwithswift.com/example-code/uikit/how-to-load-a-remote-image-url-into-uiimageview
+    // I still dont understand the dispatch queue behaviour but this
     func displayPatchImage(with urlString: String?) {
         DispatchQueue.global().async { [weak self] in
             guard let url = urlString else {

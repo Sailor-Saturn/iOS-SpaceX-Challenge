@@ -12,6 +12,9 @@
 		0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D5271B0827006A86E0 /* LaunchCell.swift */; };
 		0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D7271B089C006A86E0 /* LaunchesTableViewPresenter.swift */; };
 		0B2233DA271B08B3006A86E0 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D9271B08B3006A86E0 /* LaunchView.swift */; };
+		0B2233DC271CA673006A86E0 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233DB271CA673006A86E0 /* Segues.swift */; };
+		0B2233E2271CA6FA006A86E0 /* LinkScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233E1271CA6FA006A86E0 /* LinkScreenViewController.swift */; };
+		0B2233E6271CAA1D006A86E0 /* LinkViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233E5271CAA1D006A86E0 /* LinkViewPresenter.swift */; };
 		0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B0271208B700642662 /* AppDelegate.swift */; };
 		0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B2271208B700642662 /* SceneDelegate.swift */; };
 		0BD2E6B5271208B700642662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6B4271208B700642662 /* ViewController.swift */; };
@@ -30,7 +33,7 @@
 		0BD2E6EB2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */; };
 		0BD2E6EC2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */; };
 		0BD2E6F52714F4FD00642662 /* GetAllLauchesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F12714EFCD00642662 /* GetAllLauchesRequestTest.swift */; };
-		0BD2E6F82716383E00642662 /* AllLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F72716383E00642662 /* AllLaunches.swift */; };
+		0BD2E6F82716383E00642662 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F72716383E00642662 /* Launch.swift */; };
 		0BD2E6FD2716395700642662 /* MissionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6FC2716395700642662 /* MissionName.swift */; };
 		0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70027163F7C00642662 /* DateLaunch.swift */; };
 		0BD2E70227163F7C00642662 /* DateLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E70027163F7C00642662 /* DateLaunch.swift */; };
@@ -44,7 +47,7 @@
 		0BD2E71727164A1300642662 /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E71627164A1300642662 /* MockNetworkSession.swift */; };
 		0BD2E71927164B4000642662 /* AllLaunchesGatewayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E71827164B4000642662 /* AllLaunchesGatewayHelper.swift */; };
 		0BD2E71A27164E9200642662 /* MissionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6FC2716395700642662 /* MissionName.swift */; };
-		0BD2E71B27164E9500642662 /* AllLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F72716383E00642662 /* AllLaunches.swift */; };
+		0BD2E71B27164E9500642662 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD2E6F72716383E00642662 /* Launch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		0B2233D5271B0827006A86E0 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
 		0B2233D7271B089C006A86E0 /* LaunchesTableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewPresenter.swift; sourceTree = "<group>"; };
 		0B2233D9271B08B3006A86E0 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		0B2233DB271CA673006A86E0 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		0B2233E1271CA6FA006A86E0 /* LinkScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkScreenViewController.swift; sourceTree = "<group>"; };
+		0B2233E5271CAA1D006A86E0 /* LinkViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewPresenter.swift; sourceTree = "<group>"; };
 		0BD2E6AD271208B700642662 /* SpaceX-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD2E6B0271208B700642662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD2E6B2271208B700642662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +92,7 @@
 		0BD2E6E52714E45000642662 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		0BD2E6E92714E47100642662 /* GetAllLaunchesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLaunchesRequest.swift; sourceTree = "<group>"; };
 		0BD2E6F12714EFCD00642662 /* GetAllLauchesRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLauchesRequestTest.swift; sourceTree = "<group>"; };
-		0BD2E6F72716383E00642662 /* AllLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunches.swift; sourceTree = "<group>"; };
+		0BD2E6F72716383E00642662 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		0BD2E6FC2716395700642662 /* MissionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionName.swift; sourceTree = "<group>"; };
 		0BD2E70027163F7C00642662 /* DateLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLaunch.swift; sourceTree = "<group>"; };
 		0BD2E70427163FCD00642662 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
@@ -125,7 +131,9 @@
 		0B2233CD2718EAE6006A86E0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0B2233DE271CA6D1006A86E0 /* LinkScreen */,
 				0B2233CE2718EB07006A86E0 /* MainMenu */,
+				0B2233DB271CA673006A86E0 /* Segues.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -156,6 +164,31 @@
 				0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0B2233DE271CA6D1006A86E0 /* LinkScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0B2233E0271CA6E2006A86E0 /* Presentation */,
+				0B2233DF271CA6DD006A86E0 /* Data */,
+			);
+			path = LinkScreen;
+			sourceTree = "<group>";
+		};
+		0B2233DF271CA6DD006A86E0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0B2233E0271CA6E2006A86E0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0B2233E1271CA6FA006A86E0 /* LinkScreenViewController.swift */,
+				0B2233E5271CAA1D006A86E0 /* LinkViewPresenter.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		0BD2E6A4271208B700642662 = {
@@ -236,7 +269,7 @@
 		0BD2E6FB2716394A00642662 /* AllLaunches */ = {
 			isa = PBXGroup;
 			children = (
-				0BD2E6F72716383E00642662 /* AllLaunches.swift */,
+				0BD2E6F72716383E00642662 /* Launch.swift */,
 				0BD2E6FC2716395700642662 /* MissionName.swift */,
 				0BD2E70027163F7C00642662 /* DateLaunch.swift */,
 				0BD2E70427163FCD00642662 /* Rocket.swift */,
@@ -384,18 +417,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD2E6F82716383E00642662 /* AllLaunches.swift in Sources */,
+				0BD2E6F82716383E00642662 /* Launch.swift in Sources */,
 				0BD2E6FD2716395700642662 /* MissionName.swift in Sources */,
 				0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */,
 				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
 				0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */,
 				0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */,
+				0B2233DC271CA673006A86E0 /* Segues.swift in Sources */,
 				0B2233DA271B08B3006A86E0 /* LaunchView.swift in Sources */,
 				0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */,
 				0BD2E6E62714E45000642662 /* NetworkSession.swift in Sources */,
 				0BD2E7112716448600642662 /* AllLaunchesGateway.swift in Sources */,
+				0B2233E6271CAA1D006A86E0 /* LinkViewPresenter.swift in Sources */,
 				0BD2E6B1271208B700642662 /* AppDelegate.swift in Sources */,
+				0B2233E2271CA6FA006A86E0 /* LinkScreenViewController.swift in Sources */,
 				0BD2E70527163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */,
 				0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */,
@@ -413,7 +449,7 @@
 				0BD2E70627163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6C8271208B900642662 /* SpaceX_ChallengeTests.swift in Sources */,
 				0BD2E70227163F7C00642662 /* DateLaunch.swift in Sources */,
-				0BD2E71B27164E9500642662 /* AllLaunches.swift in Sources */,
+				0BD2E71B27164E9500642662 /* Launch.swift in Sources */,
 				0BD2E714271649B400642662 /* AllLaunchesGatewayTests.swift in Sources */,
 				0BD2E6E32714E3B000642662 /* URLRequestable.swift in Sources */,
 				0BD2E7122716448600642662 /* AllLaunchesGateway.swift in Sources */,

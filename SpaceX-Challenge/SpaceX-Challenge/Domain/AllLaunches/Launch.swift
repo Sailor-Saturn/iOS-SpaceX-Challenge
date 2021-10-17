@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct AllLaunches: Decodable, Equatable {
+public struct Launch: Decodable, Equatable {
     let mission_name: String
     let launch_date_utc: String?
     let rocket: Rocket?
