@@ -128,7 +128,7 @@ public class LaunchesManager {
     }
     
     func getCompanyInfoData(with info: Info) -> String{
-        return "\(info.name) was founded by \(info.founder) in \(info.founded). It has now \(info.employees) employees, \(info.launch_sites) launch sites, and is valued at USD \(info.valuation)"
+        return "\(info.name) was founded by \(info.founder) in \(info.founded). It has now \(info.employees) employees, \(info.launch_sites) launch sites, and is valued at $\(info.valuation). 🤑"
     }
 }
 

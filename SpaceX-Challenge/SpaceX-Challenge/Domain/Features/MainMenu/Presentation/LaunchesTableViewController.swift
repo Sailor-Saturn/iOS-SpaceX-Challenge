@@ -129,5 +129,7 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
         companyInfoLabel.text = presenter.getCompanyInfoData()
     }
     
-    
+    // TODO: Refactor constraints so that the app mantains the same aspect in different screens
+    // TODO: Fix constraint problems -> Top view is way too big and I can't change the height :(
+    // TODO: Add UI tests
 }
