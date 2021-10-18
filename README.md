@@ -33,6 +33,7 @@ Improvements:
 - Refactor constraints so that the app mantains the same aspect in different screens;
 - Fix constraint problems -> Top view is way too big and I can't change the height;
 - Show an empty screen message when the filters don't work;
+- Refactor constraints and views so that the screens will be more responsive on different screen sizes.
 
 Thank you for giving me this challenge 🙂 this was very challenging for me, I hope to receive more feedback from you on how to improve.
 
