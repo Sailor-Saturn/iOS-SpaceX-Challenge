@@ -17,6 +17,10 @@ class LinkScreenViewController: UIViewController, LinksView {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter?.viewDidLoad()
+        
+        if let url = URL(string: articleLabel.text ?? "https://www.hackingwithswift.com/example-code/system/how-to-open-a-url-in-safari") {
+            UIApplication.shared.open(url)
+        }
     }
     
     func displayLinks() {

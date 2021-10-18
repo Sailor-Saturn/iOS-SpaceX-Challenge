@@ -6,11 +6,13 @@ public protocol LinksView {
 }
 
 public class LinkViewPresenter {
+    let manager: LinkManager
     weak var view: LinkScreenViewController?
     let links: Links
     
     init(links: Links) {
         self.links = links
+        self.manager = LinkManager()
     }
     
     func viewDidLoad() {
@@ -18,7 +20,7 @@ public class LinkViewPresenter {
     }
     
     func getArticleLink() -> String {
-        return "No article"
+        return manager.getLink(with: links.article)
     }
     
     func getWikipideaLink() -> String {

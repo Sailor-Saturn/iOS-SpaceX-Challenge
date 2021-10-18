@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B219DE5271D8699007CE265 /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DE4271D8699007CE265 /* LinkManager.swift */; };
 		0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */; };
 		0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */; };
 		0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D5271B0827006A86E0 /* LaunchCell.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B219DE4271D8699007CE265 /* LinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
 		0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesManager.swift; sourceTree = "<group>"; };
 		0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		0B2233D5271B0827006A86E0 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		0B2233DF271CA6DD006A86E0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0B219DE4271D8699007CE265 /* LinkManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				0BD2E6F82716383E00642662 /* Launch.swift in Sources */,
 				0BD2E6FD2716395700642662 /* MissionName.swift in Sources */,
 				0BD2E70127163F7C00642662 /* DateLaunch.swift in Sources */,
+				0B219DE5271D8699007CE265 /* LinkManager.swift in Sources */,
 				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
 				0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */,
