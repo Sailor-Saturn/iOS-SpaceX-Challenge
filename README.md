@@ -25,5 +25,15 @@ Well this was a lot of fun, I practised a lot things I wasn't confortable with.
 
 ![image](https://user-images.githubusercontent.com/46728174/137777767-7c86f7b9-8996-49df-8e69-f8b3feb6cfad.png)
 
+Improvements:
+- Add more gateway tests, to test different nil fields;
+- Test all the functions used in the managers;
+- Test the presenter;
+- UI tests;
+- Refactor constraints so that the app mantains the same aspect in different screens;
+- Fix constraint problems -> Top view is way too big and I can't change the height;
+- Show an empty screen message when the filters don't work;
 
+Thank you for giving me this challenge 🙂 this was very challenging for me, I hope to receive more feedback from you on how to improve.
 
+Note: I noticed during this challenge that I don't know how to write wikipidea 😭 if you notice the typos about this word let me know so I can fix it. 
