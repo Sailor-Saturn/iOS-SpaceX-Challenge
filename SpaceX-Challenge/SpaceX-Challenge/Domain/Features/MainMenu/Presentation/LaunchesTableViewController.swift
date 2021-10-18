@@ -75,9 +75,9 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
         
         // I didnt understand from the challenge if the ASC or DESC is in the same filter button, if not, I would just add another filter
         // with the same choices
-        alert.addAction(UIAlertAction(title: "ASC Mission Name", style: UIAlertAction.Style.default, handler: showSuccessfulMissions))
+        alert.addAction(UIAlertAction(title: "ASC Mission Name", style: UIAlertAction.Style.default, handler: showMissionsByASCOrder))
         
-        alert.addAction(UIAlertAction(title: "DESC Mission Name", style: UIAlertAction.Style.default, handler: showSuccessfulMissions))
+        alert.addAction(UIAlertAction(title: "DESC Mission Name", style: UIAlertAction.Style.default, handler: showMissionsByDESCOrder))
         
         // Added a clear all filters to test everything better
         alert.addAction(UIAlertAction(title: "Clear all filters", style: UIAlertAction.Style.default, handler: clearFilters))
@@ -113,6 +113,14 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
     
     func clearFilters(alertAction: UIAlertAction) {
         presenter.requestAllLaunches()
+    }
+    
+    func showMissionsByASCOrder(alertAction: UIAlertAction) {
+        presenter.showMissionsByASCOrder()
+    }
+    
+    func showMissionsByDESCOrder(alertAction: UIAlertAction) {
+        presenter.showMissionsByDESCOrder()
     }
     
 }

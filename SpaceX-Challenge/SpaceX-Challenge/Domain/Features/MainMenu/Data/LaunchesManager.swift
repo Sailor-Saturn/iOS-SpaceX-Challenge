@@ -117,6 +117,15 @@ public class LaunchesManager {
     func showBySuccessMission(wasSuccessful flag: Bool, launches: [Launch]) -> [Launch]{
         return launches.filter{flag == $0.launch_success}
     }
+    
+    // Didnt know how to filter by name so I searched for this: https://stackoverflow.com/questions/26719744/swift-sort-array-of-objects-alphabetically
+    func showMissionsByASCOrder(launches: [Launch]) -> [Launch] {
+        return launches.sorted { $0.mission_name.lowercased() < $1.mission_name.lowercased() }
+    }
+    
+    func showMissionsByDESCOrder(launches: [Launch]) -> [Launch] {
+        return launches.sorted { $0.mission_name.lowercased() > $1.mission_name.lowercased() }
+    }
 }
 
 // This day calculator was referenced from this tutorial: https://sarunw.com/posts/getting-number-of-days-between-two-dates/

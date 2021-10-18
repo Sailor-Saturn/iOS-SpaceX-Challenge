@@ -80,4 +80,12 @@ public class LaunchesTableViewPresenter {
     func showBySuccessMission(wasSuccessful flag: Bool) {
         allLaunches = launchManager.showBySuccessMission(wasSuccessful: flag, launches: allLaunches)
     }
+    
+    func showMissionsByASCOrder(){
+        allLaunches = launchManager.showMissionsByASCOrder(launches: allLaunches)
+    }
+    
+    func showMissionsByDESCOrder(){
+        allLaunches = launchManager.showMissionsByDESCOrder(launches: allLaunches)
+    }
 }
