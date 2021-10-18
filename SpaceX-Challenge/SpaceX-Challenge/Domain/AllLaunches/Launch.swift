@@ -1,7 +1,3 @@
-//
-//  AllLaunches.swift
-//  SpaceX-Challenge
-
 import Foundation
 
 public struct Launch: Decodable, Equatable {

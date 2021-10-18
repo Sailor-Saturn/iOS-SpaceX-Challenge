@@ -3,6 +3,7 @@ import UIKit
 
 class LaunchesTableViewController: UITableViewController, LaunchesView {
 
+    @IBOutlet weak var companyInfoLabel: UILabel!
     var presenter = LaunchesTableViewPresenter()
     
     func reloadData() {
@@ -12,6 +13,7 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.requestAllLaunches()
+        presenter.requestCompanyInfo()
         presenter.view = self
     }
     
@@ -122,5 +124,10 @@ class LaunchesTableViewController: UITableViewController, LaunchesView {
     func showMissionsByDESCOrder(alertAction: UIAlertAction) {
         presenter.showMissionsByDESCOrder()
     }
+    
+    func displayCompanyInfo() {
+        companyInfoLabel.text = presenter.getCompanyInfoData()
+    }
+    
     
 }

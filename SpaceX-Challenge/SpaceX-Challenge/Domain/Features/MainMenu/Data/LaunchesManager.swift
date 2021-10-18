@@ -126,6 +126,10 @@ public class LaunchesManager {
     func showMissionsByDESCOrder(launches: [Launch]) -> [Launch] {
         return launches.sorted { $0.mission_name.lowercased() > $1.mission_name.lowercased() }
     }
+    
+    func getCompanyInfoData(with info: Info) -> String{
+        return "\(info.name) was founded by \(info.founder) in \(info.founded). It has now \(info.employees) employees, \(info.launch_sites) launch sites, and is valued at USD \(info.valuation)"
+    }
 }
 
 // This day calculator was referenced from this tutorial: https://sarunw.com/posts/getting-number-of-days-between-two-dates/

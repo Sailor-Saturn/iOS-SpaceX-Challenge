@@ -1,17 +1,17 @@
 
 import Foundation
 
-enum AllLaunchesGatewayError: Error {
+enum CompanyInfoGatewayError: Error {
     case errorGettingData
     case errorParsingData
     case operationFailed
 }
 
-protocol AllLaunchesGatewayProtocol: AnyObject {
-    func getAllLaunches(completion: @escaping(Result<[Launch], AllLaunchesGatewayError>) -> Void)
+protocol CompanyInfoGatewayProtocol: AnyObject {
+    func getAllLaunches(completion: @escaping(Result<Info, CompanyInfoGatewayError>) -> Void)
 }
 
-final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
+final class CompanyInfoGateway: CompanyInfoGatewayProtocol {
     let networkSession: NetworkSession
 
     init(networkSession: NetworkSession = URLSession.shared) {
@@ -20,9 +20,9 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
     
     let decoder = JSONDecoder()
     
-    func getAllLaunches(completion: @escaping (Result<[Launch], AllLaunchesGatewayError>) -> Void) {
+    func getAllLaunches(completion: @escaping (Result<Info, CompanyInfoGatewayError>) -> Void) {
         
-        let request = GetAllLaunchesRequest()
+        let request = GetCompanyInfoRequest()
         
         networkSession.loadData(from: request.urlRequest) { data, _ in
             guard let jsonData =  data else {
@@ -31,7 +31,7 @@ final class AllLaunchesGateway: AllLaunchesGatewayProtocol {
             }
             
             do {
-                let response = try self.decoder.decode([Launch].self, from: jsonData)
+                let response = try self.decoder.decode(Info.self, from: jsonData)
                 completion(.success(response))
             } catch {
                 debugPrint(error)

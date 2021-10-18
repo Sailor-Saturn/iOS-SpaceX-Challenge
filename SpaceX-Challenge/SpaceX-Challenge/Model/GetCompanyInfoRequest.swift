@@ -1,11 +1,10 @@
-
 import Foundation
 
-struct GetAllLaunchesRequest: URLRequestable {
+struct GetCompanyInfoRequest: URLRequestable {
     let url: URL
     
     init() {
-        let urlString = "https://api.spacexdata.com/v3/launches"
+        let urlString = "https://api.spacexdata.com/v3/info"
         guard let url = URL(string: urlString) else { fatalError() }
         self.url = url
     }

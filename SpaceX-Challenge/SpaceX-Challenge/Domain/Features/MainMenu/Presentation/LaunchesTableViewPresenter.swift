@@ -4,10 +4,12 @@ import Foundation
 public protocol LaunchesView {
     func reloadData()
     func navigateToLinkScreen(with links: Links)
+    func displayCompanyInfo()
 }
 public class LaunchesTableViewPresenter {
     
-    let gateway = AllLaunchesGateway()
+    let allLaunchesGateway = AllLaunchesGateway()
+    let companyInfoGateway = CompanyInfoGateway()
     let launchManager = LaunchesManager()
     
     public var view: LaunchesView?
@@ -16,6 +18,14 @@ public class LaunchesTableViewPresenter {
         didSet {
             DispatchQueue.main.async {
                 self.view?.reloadData()
+            }
+        }
+    }
+    
+    var companyInfo: Info?{
+        didSet {
+            DispatchQueue.main.async {
+                self.view?.displayCompanyInfo()
             }
         }
     }
@@ -49,12 +59,23 @@ public class LaunchesTableViewPresenter {
     }
     
     func requestAllLaunches() {
-        gateway.getAllLaunches { [weak self] result in
+        allLaunchesGateway.getAllLaunches { [weak self] result in
             switch result {
             case .failure(let error):
                 print(error)
             case .success(let launches):
                 self?.allLaunches = launches
+            }
+        }
+    }
+    
+    func requestCompanyInfo() {
+        companyInfoGateway.getAllLaunches {[weak self] result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let info):
+                self?.companyInfo = info
             }
         }
     }
@@ -87,5 +108,12 @@ public class LaunchesTableViewPresenter {
     
     func showMissionsByDESCOrder(){
         allLaunches = launchManager.showMissionsByDESCOrder(launches: allLaunches)
+    }
+    
+    func getCompanyInfoData() -> String {
+        guard let info = companyInfo else {
+            return "No information about the company available... Please wait. "
+        }
+        return launchManager.getCompanyInfoData(with: info)
     }
 }
