@@ -14,6 +14,7 @@
 		0B219DED271DCEC7007CE265 /* GetCompanyInfoRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DEC271DCEC7007CE265 /* GetCompanyInfoRequestTests.swift */; };
 		0B219DF0271DCF1F007CE265 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DEF271DCF1F007CE265 /* Info.swift */; };
 		0B219DF2271DD00B007CE265 /* CompanyInfoGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DF1271DD00B007CE265 /* CompanyInfoGateway.swift */; };
+		0B219DF4271E1479007CE265 /* LaunchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DF3271E1479007CE265 /* LaunchManagerTests.swift */; };
 		0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */; };
 		0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */; };
 		0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D5271B0827006A86E0 /* LaunchCell.swift */; };
@@ -82,6 +83,7 @@
 		0B219DEC271DCEC7007CE265 /* GetCompanyInfoRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCompanyInfoRequestTests.swift; sourceTree = "<group>"; };
 		0B219DEF271DCF1F007CE265 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		0B219DF1271DD00B007CE265 /* CompanyInfoGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoGateway.swift; sourceTree = "<group>"; };
+		0B219DF3271E1479007CE265 /* LaunchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchManagerTests.swift; sourceTree = "<group>"; };
 		0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesManager.swift; sourceTree = "<group>"; };
 		0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		0B2233D5271B0827006A86E0 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				0BD2E6F12714EFCD00642662 /* GetAllLauchesRequestTest.swift */,
 				0BD2E713271649B400642662 /* AllLaunchesGatewayTests.swift */,
 				0B219DEC271DCEC7007CE265 /* GetCompanyInfoRequestTests.swift */,
+				0B219DF3271E1479007CE265 /* LaunchManagerTests.swift */,
 			);
 			path = "SpaceX-ChallengeTests";
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				0BD2E7122716448600642662 /* AllLaunchesGateway.swift in Sources */,
 				0BD2E71727164A1300642662 /* MockNetworkSession.swift in Sources */,
 				0BD2E71927164B4000642662 /* AllLaunchesGatewayHelper.swift in Sources */,
+				0B219DF4271E1479007CE265 /* LaunchManagerTests.swift in Sources */,
 				0BD2E6F52714F4FD00642662 /* GetAllLauchesRequestTest.swift in Sources */,
 				0BD2E6EB2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */,
 				0BD2E71A27164E9200642662 /* MissionName.swift in Sources */,
