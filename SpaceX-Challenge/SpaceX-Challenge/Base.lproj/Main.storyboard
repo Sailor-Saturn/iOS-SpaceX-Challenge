@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +29,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="hammer.fill" catalog="system"/>
+                                            <connections>
+                                                <action selector="filterButtonPressed:" destination="QsN-5Y-0rG" eventType="touchUpInside" id="Zu0-Q3-zfy"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-mV-X2J">
                                             <rect key="frame" x="0.0" y="63" width="414" height="133"/>
@@ -160,7 +162,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="Ffd-wv-bv8" kind="presentation" identifier="cellToLinks" id="dp9-MQ-wYO"/>
+                        <segue destination="mqG-cQ-REr" kind="presentation" identifier="cellToLinks" id="30E-hC-196"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir1-xv-svX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,70 +170,67 @@
             <point key="canvasLocation" x="-528" y="-9"/>
         </scene>
         <!--Link Screen View Controller-->
-        <scene sceneID="NWh-vW-rpr">
+        <scene sceneID="vbm-Ii-tC2">
             <objects>
-                <viewController id="Ffd-wv-bv8" customClass="LinkScreenViewController" customModule="SpaceX_Challenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UUY-fh-J6j">
+                <tableViewController id="mqG-cQ-REr" customClass="LinkScreenViewController" customModule="SpaceX_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aZ9-ey-o1N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o75-TS-Bfp">
-                                <rect key="frame" x="0.0" y="20" width="77.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go back"/>
-                                <connections>
-                                    <action selector="goBackButtonTapped:" destination="Ffd-wv-bv8" eventType="touchUpInside" id="Ay3-4m-JdL"/>
-                                    <action selector="goBackButtonTapped:" destination="afW-YE-obs" eventType="touchUpInside" id="CWI-CH-Viz"/>
-                                    <action selector="goBackl:forEvent:" destination="afW-YE-obs" eventType="touchUpInside" id="mXP-dM-fBb"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-nj-uxc">
-                                <rect key="frame" x="12" y="78" width="402" height="150"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-gP-JSw" userLabel="articleLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="402" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-kk-jc2" userLabel="wikipideaLabel">
-                                        <rect key="frame" x="0.0" y="65" width="402" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGk-cH-xU2" userLabel="videoLabel">
-                                        <rect key="frame" x="0.0" y="129.5" width="402" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="rWe-o4-3hi"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="PYn-Zi-RYD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="LsL-nj-uxc" firstAttribute="top" secondItem="o75-TS-Bfp" secondAttribute="bottom" constant="27" id="3mW-Di-bTw"/>
-                            <constraint firstItem="o75-TS-Bfp" firstAttribute="top" secondItem="PYn-Zi-RYD" secondAttribute="top" constant="20" id="YCe-70-bwN"/>
-                            <constraint firstItem="LsL-nj-uxc" firstAttribute="leading" secondItem="PYn-Zi-RYD" secondAttribute="leading" constant="12" id="cXd-Id-Xcg"/>
-                            <constraint firstItem="PYn-Zi-RYD" firstAttribute="trailing" secondItem="LsL-nj-uxc" secondAttribute="trailing" id="eJ8-Vq-YFJ"/>
-                            <constraint firstItem="o75-TS-Bfp" firstAttribute="leading" secondItem="PYn-Zi-RYD" secondAttribute="leading" id="ead-g9-FTX"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="articleLabel" destination="GiZ-gP-JSw" id="6CB-0M-xus"/>
-                        <outlet property="videoLabel" destination="fGk-cH-xU2" id="icd-2i-UX4"/>
-                        <outlet property="wikipideaLabel" destination="HdY-kk-jc2" id="Cgl-6V-GPU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy8-eE-yOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="afW-YE-obs" userLabel="Exit" sceneMemberID="exit"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="SxL-kf-JZv">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64X-uD-VBE" userLabel="GoBackButton">
+                                    <rect key="frame" x="8" y="8" width="78" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Go Back"/>
+                                    <connections>
+                                        <action selector="goBackButtonTapped:" destination="mqG-cQ-REr" eventType="touchUpInside" id="Vgf-qG-hpb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="64X-uD-VBE" firstAttribute="leading" secondItem="SxL-kf-JZv" secondAttribute="leading" id="gyH-9A-ved"/>
+                                <constraint firstItem="64X-uD-VBE" firstAttribute="top" secondItem="SxL-kf-JZv" secondAttribute="top" constant="5" id="jgP-Ja-nNq"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpaceXLinkCell" id="Abt-CH-1qp" userLabel="LinkCell" customClass="LinkCell" customModule="SpaceX_Challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Abt-CH-1qp" id="ukZ-sq-pLP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-gz-bqT">
+                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kyT-gz-bqT" firstAttribute="top" secondItem="ukZ-sq-pLP" secondAttribute="topMargin" id="8dB-t6-wG6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kyT-gz-bqT" secondAttribute="trailing" id="O3r-cp-wbA"/>
+                                        <constraint firstItem="kyT-gz-bqT" firstAttribute="leading" secondItem="ukZ-sq-pLP" secondAttribute="leadingMargin" id="sU9-sz-eQn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="linkCell" destination="kyT-gz-bqT" id="jiu-7d-PFU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mqG-cQ-REr" id="QXV-yf-L86"/>
+                            <outlet property="delegate" destination="mqG-cQ-REr" id="MsZ-H0-kb4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SU6-9D-HZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418.84057971014494" y="-2.0089285714285712"/>
+            <point key="canvasLocation" x="386" y="-9"/>
         </scene>
     </scenes>
     <resources>

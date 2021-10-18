@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B219DE5271D8699007CE265 /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DE4271D8699007CE265 /* LinkManager.swift */; };
+		0B219DE7271D91F2007CE265 /* LinkCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DE6271D91F2007CE265 /* LinkCellView.swift */; };
+		0B219DE9271D91FC007CE265 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B219DE8271D91FC007CE265 /* LinkCell.swift */; };
 		0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */; };
 		0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */; };
 		0B2233D6271B0827006A86E0 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2233D5271B0827006A86E0 /* LaunchCell.swift */; };
@@ -70,6 +72,8 @@
 
 /* Begin PBXFileReference section */
 		0B219DE4271D8699007CE265 /* LinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
+		0B219DE6271D91F2007CE265 /* LinkCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCellView.swift; sourceTree = "<group>"; };
+		0B219DE8271D91FC007CE265 /* LinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
 		0B2233D12718EB3D006A86E0 /* LaunchesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesManager.swift; sourceTree = "<group>"; };
 		0B2233D3271B081E006A86E0 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		0B2233D5271B0827006A86E0 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 			children = (
 				0B2233E1271CA6FA006A86E0 /* LinkScreenViewController.swift */,
 				0B2233E5271CAA1D006A86E0 /* LinkViewPresenter.swift */,
+				0B219DE6271D91F2007CE265 /* LinkCellView.swift */,
+				0B219DE8271D91FC007CE265 /* LinkCell.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				0BD2E70E2716438900642662 /* Links.swift in Sources */,
 				0BD2E6B5271208B700642662 /* ViewController.swift in Sources */,
 				0B2233D8271B089C006A86E0 /* LaunchesTableViewPresenter.swift in Sources */,
+				0B219DE9271D91FC007CE265 /* LinkCell.swift in Sources */,
 				0B2233D22718EB3D006A86E0 /* LaunchesManager.swift in Sources */,
 				0B2233DC271CA673006A86E0 /* Segues.swift in Sources */,
 				0B2233DA271B08B3006A86E0 /* LaunchView.swift in Sources */,
@@ -438,6 +445,7 @@
 				0B2233E2271CA6FA006A86E0 /* LinkScreenViewController.swift in Sources */,
 				0BD2E70527163FCD00642662 /* Rocket.swift in Sources */,
 				0BD2E6B3271208B700642662 /* SceneDelegate.swift in Sources */,
+				0B219DE7271D91F2007CE265 /* LinkCellView.swift in Sources */,
 				0B2233D4271B081E006A86E0 /* LaunchesTableViewController.swift in Sources */,
 				0BD2E6E22714E3B000642662 /* URLRequestable.swift in Sources */,
 				0BD2E6EA2714E47100642662 /* GetAllLaunchesRequest.swift in Sources */,

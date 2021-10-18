@@ -66,4 +66,18 @@ public class LaunchesTableViewPresenter {
         }
         view?.navigateToLinkScreen(with: links)
     }
+    
+    func filterByLaunchYears(launchYears: String) {
+        // Awful approach to get the original list but I didnt have time to think of a new approach
+        if(launchYears == "") {
+            requestAllLaunches()
+        }else {
+            allLaunches = launchManager.filterByLaunchYears(launchYears: launchYears, launches: allLaunches)
+        }
+        
+    }
+    
+    func showBySuccessMission(wasSuccessful flag: Bool) {
+        allLaunches = launchManager.showBySuccessMission(wasSuccessful: flag, launches: allLaunches)
+    }
 }

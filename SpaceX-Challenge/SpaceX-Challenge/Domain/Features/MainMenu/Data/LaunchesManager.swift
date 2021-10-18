@@ -18,6 +18,25 @@ public class LaunchesManager {
         return dateFormatter.date(from: dateValue)
     }
     
+    // yet another date conversion, not the best approach for sure
+    func getYearOfLaunchDate(date: String?) -> String {
+        guard let dateValue = date else {
+            return " " // default
+        }
+        let getDateUTC = convertDateFromUTCFormat(date: dateValue)
+        
+        guard let newDate = getDateUTC else {
+            return " "
+        }
+        
+        let dateFormatter = DateFormatter()
+
+        dateFormatter.dateFormat = "yyyy"
+        dateFormatter.timeZone = NSTimeZone.local
+
+        return dateFormatter.string(from: newDate)
+    }
+    
     func convertDateToDesiredFormat(date: Date?) -> String {
         let dateFormatter = DateFormatter()
         
@@ -67,7 +86,7 @@ public class LaunchesManager {
     }
     
     // Not copy pasted but relied on this explanation from stack over flow https://stackoverflow.com/questions/26807416/check-if-date-is-before-current-date-swift
-    // TODO: Test when the day is in the future and in
+    // TODO: Test when the day is in the future, present and past.
     func populateDateFromToday(with date: String?) -> String {
         let todaysDate = Date()
         let calendar = Calendar(identifier: Calendar.Identifier.iso8601)
@@ -86,6 +105,17 @@ public class LaunchesManager {
             return "The launch is today! 🥳" // Small easter egg
         }
         return "Days from now: " + calendar.numberOfDaysBetween(todaysDate, and: dateLaunchUTC) + " days"
+    }
+    
+    func filterByLaunchYears(launchYears: String, launches: [Launch]) -> [Launch] {
+        let launchYearsArray: [String]
+        // Used this approach to slice the launch years: https://stackoverflow.com/questions/25678373/split-a-string-into-an-array-in-swift
+        launchYearsArray = launchYears.components(separatedBy: ", ")
+        return launches.filter{launchYearsArray.contains(getYearOfLaunchDate(date: $0.launch_date_utc))}
+    }
+    
+    func showBySuccessMission(wasSuccessful flag: Bool, launches: [Launch]) -> [Launch]{
+        return launches.filter{flag == $0.launch_success}
     }
 }
 
